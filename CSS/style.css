@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #ffffff;
+    
+}
+
+.inner_header {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo_container img{
+    max-height: 150px;
+    width: auto;
+}
+
+.bookNowBtn {
+    background-color: #FFC72C; /* Yellow background */
+    color: #FFFFFF; /* White text color */
+    font-size: 20px; /* Font size for text */
+    text-align: center; /* Center text */
+    padding: 5px 12px; /* Padding around the text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Inline-block display */
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase; /* Uppercase text */
+    margin-left: auto;
+
+  }
+ 
+  .bookNowBtn:hover {
+    background-color: #ffffff; /* Darker shade of yellow or any other color */
+    color: #FFC72C; /* White text color */
+    display: block;
+  }
+
+  .navbar {
+      background-color: #183358; /* Set your desired background color */
+      padding: 10px ; /* Add padding for spacing */
+      display: flex; /* Make the navbar a flex container */
+      justify-content: center; /* Center the navigation items */
+    }
+    .navbar ul {
+      list-style-type: none;
+      width: 90%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  .navbar li {
+    float: left;
+    
+  }
+
+  .navbar li a {
+   
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Bebas Neue', sans-serif; 
+  }
+
+  .welcome-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .welcome-logo {
+    width: 181px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+  .text h1{
+    font-size: 32px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #183358; /* Text color */
+  }
+
+  .text p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0 0;
+}
+
+
+
+
