@@ -1,163 +1,37 @@
+
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .header {
-    width: 100%;
-    height: 80px;
-    display: block;
-    background-color: #ffffff;
-    
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #ffffff;
+  
 }
 
 .inner_header {
-    width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0 auto;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .logo_container img{
-    max-height: 150px;
-    width: auto;
+  max-height: 150px;
+  width: auto;
 }
 
 .bookNowBtn {
-    background-color: #FFC72C; /* Yellow background */
-    color: #183358; /* White text color */
-    font-size: 20px; /* Font size for text */
-    text-align: center; /* Center text */
-    padding: 5px 12px; /* Padding around the text */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor on hover */
-    display: inline-block; /* Inline-block display */
-    font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase; /* Uppercase text */
-    margin-left: auto;
-
-  }
- 
-  .bookNowBtn:hover {
-    background-color: #ffffff; /* Darker shade of yellow or any other color */
-    color: #FFC72C; /* White text color */
-  }
-
-  .navbar {
-      background-color: #183358; /* Set your desired background color */
-      padding: 10px ; /* Add padding for spacing */
-      display: flex; /* Make the navbar a flex container */
-      justify-content: center; /* Center the navigation items */
-    }
-    .navbar ul {
-      list-style-type: none;
-      width: 90%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      display: flex;
-      justify-content: space-between;
-      
-    }
-  .navbar li {
-    float: left;
-    
-  }
-
-  .navbar li a {
-    font-size: 20px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font-family: 'Bebas Neue', sans-serif; 
-  }
-
-  .welcome-section {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    /* margin-top: 20px; */
-  }
-
-  .welcome-logo {
-    width: 181px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 20px;
-    align-items: center;
-}
-  
-  .text h1{
-    font-size: 32px;
-    margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
-    color: #183358; /* Text color */
-  }
-
-  .text p {
-    font-size: 20px;
-    color: #555;
-    line-height: 1.6;
-    margin: 5px 0 0;
-}
-
-/* CHOOSE SECTION */
-
-.choose-section-background {
-  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/campus 3.jpg");
-  padding: 20px;
-  background-position: center;
-  background-size: cover;
-  position: relative; 
-}
-
-.choose-section {
-  display: flex;
-  justify-content: center;
-  color: white;
-  width: 80%;
-  margin: auto;
-}
-
-
-.image-container img{
-  width: 416px;
-  height: 416px;
-  margin-right: 20px;
-  box-shadow: #D6BE88 -10px 10px;
- 
-}
-
-.choose-section h2 {
-  font-size: 32px;
-  margin-top: 10px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: lighter;
-}
-
-.choose-section h3 {
-  font-size: 20px;
-  line-height: 2;
-  margin: 0;
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: lighter;
-}
-
-.choose-section p {
-  font-size: 20px;
-    line-height: 1.6;
-    margin: 5px 0 0;
-}
-
-.readMoreBtn {
   background-color: #FFC72C; /* Yellow background */
-  font-size: 32px; /* Font size for text */
+  color: #183358; /* White text color */
+  font-size: 20px; /* Font size for text */
   text-align: center; /* Center text */
   padding: 5px 12px; /* Padding around the text */
   border: none; /* Remove border */
@@ -165,31 +39,163 @@
   display: inline-block; /* Inline-block display */
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase; /* Uppercase text */
-  margin-top: 20px;
+  margin-left: auto;
+
+}
+
+.bookNowBtn:hover {
+  background-color: #ffffff; /* Darker shade of yellow or any other color */
+  color: #FFC72C; /* White text color */
+}
+
+.navbar {
+    background-color: #183358; /* Set your desired background color */
+    padding: 10px ; /* Add padding for spacing */
+    display: flex; /* Make the navbar a flex container */
+    justify-content: center; /* Center the navigation items */
+  }
+  .navbar ul {
+    list-style-type: none;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+.navbar li {
+  float: left;
+  
+}
+
+.navbar li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Bebas Neue', sans-serif; 
+}
+
+.welcome-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  /* margin-top: 20px; */
+}
+
+.welcome-logo {
+  width: 181px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.text h1{
+  font-size: 32px;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #183358; /* Text color */
+}
+
+.text p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin: 5px 0 0;
+}
+
+/* CHOOSE SECTION */
+
+.choose-section-background {
+background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/campus 3.jpg");
+padding: 80px;
+background-position: center;
+background-size: cover;
+position: relative; 
+}
+
+.choose-section {
+display: flex;
+justify-content: center;
+color: white;
+width: 80%;
+margin: auto;
+}
+
+
+.image-container img{
+width: 416px;
+height: 416px;
+margin-right: 20px;
+box-shadow: #D6BE88 -10px 10px;
+
+}
+
+.choose-section h2 {
+font-size: 32px;
+margin-top: 10px;
+font-family: 'Bebas Neue', sans-serif;
+font-weight: lighter;
+}
+
+.choose-section h3 {
+font-size: 20px;
+line-height: 2;
+margin: 0;
+font-family: 'Bebas Neue', sans-serif;
+font-weight: lighter;
+}
+
+.choose-section p {
+font-size: 20px;
+  line-height: 1.6;
+  margin: 5px 0 0;
+}
+
+.readMoreBtn {
+background-color: #FFC72C; /* Yellow background */
+font-size: 32px; /* Font size for text */
+text-align: center; /* Center text */
+padding: 5px 12px; /* Padding around the text */
+border: none; /* Remove border */
+cursor: pointer; /* Pointer cursor on hover */
+display: inline-block; /* Inline-block display */
+font-family: 'Bebas Neue', sans-serif;
+text-transform: uppercase; /* Uppercase text */
+margin-top: 20px;
 }
 .readMoreBtn a {
-  color: #183358;
+color: #183358;
 }
 
 
 .readMoreBtn:hover {
-  background-color: #ffffff; /* Darker shade of yellow or any other color */
+background-color: #ffffff; /* Darker shade of yellow or any other color */
 }
 .readMoreBtn:hover a {
-  color: rgb(255, 199, 44);
+color: rgb(255, 199, 44);
 }
 
 /* OUR CAMPUS */
 .campus {
-  background: #183358;
-  margin: auto;
-  font-family: 'Bebas Neue', sans-serif;
-  color: white;
-  text-align: center;
-  padding: 20px;
+background: #183358;
+margin: auto;
+font-family: 'Bebas Neue', sans-serif;
+color: white;
+text-align: center;
+padding: 20px;
+}
+.campus h1 {
+font-size: 32px;
+font-weight: 400;
 }
 
-.row {
+
+.campus-row {
   width: 80%;
   margin: auto;
   margin-top: 20px;
@@ -222,7 +228,7 @@
 }
 
 .layer:hover {
-  background: rgba(255, 199, 44, 0.7);
+  background: #ffc72cb3;
 }
 
 .layer h3 {
@@ -239,10 +245,370 @@
   bottom: 49%;
   opacity: 1;
 }
-@media (max-width: 700px) {
+
+/* partner */
+.partner-section {
+  background-color: #ffffff; /* Light gray background */
+  padding: 20px 20px; /* Section spacing */
+  text-align: center; /* Center align the text and logos */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.partner-section h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px; /* Space below the heading */
+  color: #000000; /* Dark text color */
+}
+
+.partner-logos {
+  width: 80%;
+  margin: auto;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center align the logos */
+  gap: 40px; /* Space between logos */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.partner-logos img {
+  height: 120px; /* Logo height */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+/* contact-us */
+.contact-us {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.contact-us h2 {
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.qr-item {
+  text-align: center;
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* map section */
+
+.map-section{
+  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/AIA-logo1.png");
+  background-position: center;
+  background-size: contain;
+  padding: 20px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  color: white;
+}
+
+.maps {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Arrange maps in a column */
+  gap: 2em; /* Add spacing between each map */
+}
+
+.map, .map-right {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+}
+.map iframe {
+  box-shadow: #D6BE88 -10px 10px;
+}
+.map-right iframe {
+  box-shadow: #D6BE88 10px 10px;
+}
+.map-info h2{
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.map-info h3{
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.map-info p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.map-info-right h2 {
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.map-info-right h3{
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.map-info-right p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.map-info-right {
+  text-align: right;
+}
+
+/* more info */
+.more-info-section {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+.more-info-section h2 {
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-us-btn {
+  background-color: #ffffff; /* Yellow background */
+  color: #183358; /* White text color */
+  font-size: 32px; /* Font size for text */
+  text-align: center; /* Center text */
+  padding: 5px 12px; /* Padding around the text */
+  border: 2px solid #183358; /* Border around the text */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-block; /* Inline-block display */
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase; /* Uppercase text */
+  margin-left: auto;
+}
+
+.contact-us-btn:hover {
+  background-color: #183358; /* Darker yellow on hover */
+  color: #FFF; /* White text on hover */
+}
+
+
+/* footer */
+.footer {
+  background-color: #183358;
+  padding: 20px;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col,
+.footer-col-logo-section {
+  width: 25%; /* Default: 4 columns layout */
+}
+.footer-btn .maps-btn {
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #D6BE88; /* Gold border */
+  margin: 20px 0;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Spacing */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 14px; /* Font size */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+
+}
+.footer-btn .maps-btn:hover {
+  background-color: #D6BE88; /* Gold background on hover */
+  color: #183358; /* Change text color to navy */
+  scale: 1.1;
+}
+.footer-col h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #D6BE88;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footer-col-logo-section .social-link a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin:0 5px 5px 0;
+  text-align: center;
+  color: white;
+  transition: all 0.3s;  
+  justify-content: center;
+  transform: scale(1.5);
+}
+.footer-col-logo-section .social-link a:hover {
+  color: #D6BE88;
+  transform: scale(2);
+}
+
+.footer-col-logo-section {
+  text-align: center;
+  color: white;
+}
+.footer-logo img {
+  max-height: 150px;
+  width: auto;
+  margin: 0 auto;
+  transform: translateY(-30px); 
+}
+.footer-logo-content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  transform: translateY(-50px); 
+
+}
+.footer-logo-content p {
+  font-size: 20px;
+  color: #D6BE88;
+  margin-bottom: 20px;
+  transform: translateY(-50px); 
+
+}
+.footer-partner-logos {
+  width: 1170px;
+  margin: auto;
+  display: flex; /* Use flexbox for alignment */
+  gap: 40px; /* Space between logos */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-partner-logos img {
+  height: 120px; /* Logo height */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-partner-logos img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+
+@media (max-width: 767px) {
   .welcome-section {
     flex-direction: column;
   }
+
+
+  /* map */
+  
+  .maps {
+    text-align: center;
+    width: 100%; /* Make maps take full width on small screens */
+  }
+ 
+  .map-info-right {
+    order: +1;
+    text-align: center; /* Center-align text on small screens */
+  }
+  .map, .map-right {
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack the maps vertically */
+    gap: 1em;
+    align-items: center;
+  }
+  .map iframe, .map-right iframe {
+    box-shadow: none; /* Remove box-shadow on smaller screens */
+  }
+  /* footer */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer-col-logo-section {
+    width: 100%;
+    text-align: justify;
+  }
+  
 }
+
+@media (max-width: 574px) {
+
+  .welcome-section {
+    flex-direction: column;
+  }
+
+
+
+  /* footer */
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+  
+}
+
+
+
 
 
