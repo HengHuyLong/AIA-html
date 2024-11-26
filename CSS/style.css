@@ -248,7 +248,8 @@ font-weight: 400;
 
 /* partner */
 .partner-section {
-  background-color: #ffffff; /* Light gray background */
+  background-color: #183358; /* Light gray background */
+  color: white;
   padding: 20px 20px; /* Section spacing */
   text-align: center; /* Center align the text and logos */
   font-family: 'Bebas Neue', sans-serif;
@@ -258,7 +259,6 @@ font-weight: 400;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 30px; /* Space below the heading */
-  color: #000000; /* Dark text color */
 }
 
 .partner-logos {
@@ -277,6 +277,9 @@ font-weight: 400;
 
 .partner-logos img:hover {
   transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+.partner-logos img:last-child {
+  height: 80px; /* Make the last logo a bit smaller */
 }
 /* contact-us */
 .contact-us {
@@ -551,14 +554,40 @@ font-weight: 400;
 .footer-partner-logos img:hover {
   transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
+.footer-partner-logos img:last-child {
+  height: 80px; /* Make the last logo a bit smaller */
+}
 
 
 @media (max-width: 767px) {
   .welcome-section {
     flex-direction: column;
   }
+  /* choose-section */
+  .choose-section {
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    }
+  .choose-section img {
+  box-shadow: none;
+  align-items: center;
+  margin-left: 10px;
+    }
+  .choose-section p {
+  margin-bottom: 20px;
+    }
+  /* partner section */
 
-
+  /* qr section  */
+  .qr-container {
+    width: 100%;
+    display: block;
+  }
+  .qr-item {
+   margin-bottom: 20px;
+  }
   /* map */
   
   .maps {
