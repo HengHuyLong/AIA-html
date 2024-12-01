@@ -17,25 +17,120 @@
     <title>AIA</title>
   </head>
   <body>
-    <div class="header">
-      <div class="inner_header">
-        <div class="logo_container">
-          <a href="index.html">
-            <img src="image/3B.png" alt="AIA" />
-          </a>
+    <div class="hideOnMobile">
+      <div class="header">
+        <div class="inner_header">
+          <div class="logo_container">
+            <a href="index.html">
+              <img src="image/3B.png" alt="AIA" />
+            </a>
+          </div>
+          <button class="bookNowBtn" role="button">BOOK A TOUR</button>
         </div>
-        <button class="bookNowBtn" role="button">BOOK A TOUR</button>
       </div>
     </div>
     <!-- Navbar -->
     <nav class="navbar">
-      <ul>
-        <li><a href="#">ABOUT US</a></li>
+      <div class="logo_container_mobile">
+        <a href="index.html">
+          <img src="image/3.png" alt="AIA" />
+        </a>
+      </div>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <img
+            src="/image/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </li>
+        <li class="sidebar-dropdown">
+          <a href="#" class="sidebar_arrow"> ABOUT US </a>
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Welcome to AIA</a>
+              <a href="#">Why choose AIA?</a>
+              <a href="#">Contact us</a>
+              <a href="#">Photo gallery</a>
+            </div>
+          </ul>
+        </li>
         <li><a href="#">NEWS</a></li>
-        <li><a href="#">ADMISSION</a></li>
-        <li><a href="#">CURRICULA</a></li>
+
+        <li class="sidebar-dropdown">
+          <a href="#">ADMISSION</a>
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Welcome to AIA</a>
+              <a href="#">Why choose AIA?</a>
+              <a href="#">Contact us</a>
+              <a href="#">Photo gallery</a>
+            </div>
+          </ul>
+        </li>
+
+        <li class="sidebar-dropdown">
+          <a href="#">CURRICULA</a>
+
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Welcome to AIA</a>
+              <a href="#">Why choose AIA?</a>
+              <a href="#">Contact us</a>
+              <a href="#">Photo gallery</a>
+            </div>
+          </ul>
+        </li>
+
         <li><a href="#">CAREERS</a></li>
         <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile">
+          <a href="#">ABOUT US</a>
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Welcome to AIA</a>
+              <a href="#">Why choose AIA?</a>
+              <a href="#">Contact us</a>
+              <a href="#">Photo gallery</a>
+            </div>
+          </ul>
+        </li>
+
+        <li class="hideOnMobile"><a href="#">NEWS</a></li>
+
+        <li class="hideOnMobile">
+          <a href="#">ADMISSION</a>
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Admission process</a>
+              <a href="#">Tuition fees</a>
+              <a href="#">Policy</a>
+            </div>
+          </ul>
+        </li>
+
+        <li class="hideOnMobile">
+          <a href="#">CURRICULA</a>
+          <ul class="dropdown_menu">
+            <div class="dropdown_link">
+              <a href="#">Programmes</a>
+              <a href="#">WACE</a>
+              <a href="#">Scholarships</a>
+            </div>
+          </ul>
+        </li>
+
+        <li class="hideOnMobile"><a href="#">CAREERS</a></li>
+
+        <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+
+        <li class="menu-button" onclick="showSidebar()">
+          <img
+            src="/image/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </li>
       </ul>
     </nav>
     <video
@@ -299,5 +394,53 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+
+      document.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      document
+        .querySelectorAll(".sidebar-dropdown > a")
+        .forEach(function (item) {
+          item.addEventListener("click", function (event) {
+            const dropdown = this.closest(".sidebar-dropdown"); // Get the parent dropdown container
+            const dropdownMenu = dropdown.querySelector(".dropdown_link"); // Get the dropdown menu
+
+            // Toggle the 'active' class to show or hide the dropdown
+            dropdown.classList.toggle("active");
+
+            // Optionally close any other open dropdowns (if you want one open at a time)
+            document
+              .querySelectorAll(".sidebar-dropdown")
+              .forEach(function (otherDropdown) {
+                if (
+                  otherDropdown !== dropdown &&
+                  otherDropdown.classList.contains("active")
+                ) {
+                  otherDropdown.classList.remove("active");
+                }
+              });
+
+            // Prevent the default link behavior
+            event.preventDefault();
+          });
+        });
+    </script>
   </body>
 </html>
