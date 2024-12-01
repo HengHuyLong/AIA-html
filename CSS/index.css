@@ -11,7 +11,7 @@
   height: 80px;
   display: block;
   background-color: #ffffff;
-  
+  position: relative;
 }
 
 .inner_header {
@@ -29,8 +29,8 @@
 }
 
 .bookNowBtn {
-  background-color: #FFC72C; /* Yellow background */
-  color: #183358; /* White text color */
+  background-color: #183358; /* Yellow background */
+  color: #f5f5f5; /* White text color */
   font-size: 20px; /* Font size for text */
   text-align: center; /* Center text */
   padding: 5px 12px; /* Padding around the text */
@@ -58,7 +58,10 @@
     transition: background-color 0.4s ease-in-out;
     z-index: 999;
   }
+  
 .navbar.scrolled {
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: #183358;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
@@ -95,6 +98,7 @@
   display: none;
 }
 .navbar.scrolled .menu-button {
+  margin-right: 20px;
   display: block;
 }
 .navbar.scrolled .logo_container_mobile img {

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="stylesheet" href="/CSS/curricula.css" />
+
+    <title>Curricula - AIA</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="hideOnMobile">
+        <div class="header">
+          <div class="inner_header">
+            <div class="logo_container">
+              <a href="index.html">
+                <img src="image/3B.png" alt="AIA" />
+              </a>
+            </div>
+            <button class="bookNowBtn" role="button">BOOK A TOUR</button>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo_container_mobile">
+          <a href="index.html">
+            <img src="image/3.png" alt="AIA" />
+          </a>
+        </div>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <img
+              src="/image/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="about.html" class="sidebar_arrow"> ABOUT US </a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Welcome to AIA</a>
+                <a href="#">Why choose AIA?</a>
+                <a href="#">Contact us</a>
+                <a href="#">Photo gallery</a>
+              </div>
+            </ul>
+          </li>
+          <li><a href="#">NEWS</a></li>
+
+          <li class="sidebar-dropdown">
+            <a href="#">ADMISSION</a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Admission</a>
+                <a href="#">Admission process</a>
+                <a href="#">Tuition Fees</a>
+                <a href="#">Policy</a>
+              </div>
+            </ul>
+          </li>
+
+          <li class="sidebar-dropdown">
+            <a href="#">CURRICULA</a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Programmes</a>
+                <a href="#">WACE</a>
+                <a href="#">Scholarships</a>
+              </div>
+            </ul>
+          </li>
+
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile">
+            <a href="about.html">ABOUT US</a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Welcome to AIA</a>
+                <a href="#">Why choose AIA?</a>
+                <a href="#">Contact us</a>
+                <a href="#">Photo gallery</a>
+              </div>
+            </ul>
+          </li>
+
+          <li class="hideOnMobile"><a href="#">NEWS</a></li>
+
+          <li class="hideOnMobile">
+            <a href="admission.html">ADMISSION</a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Admission process</a>
+                <a href="#">Tuition fees</a>
+                <a href="#">Policy</a>
+              </div>
+            </ul>
+          </li>
+
+          <li class="hideOnMobile">
+            <a href="curricula.html">CURRICULA</a>
+            <ul class="dropdown_menu">
+              <div class="dropdown_link">
+                <a href="#">Programmes</a>
+                <a href="#">WACE</a>
+                <a href="#">Scholarships</a>
+              </div>
+            </ul>
+          </li>
+
+          <li class="hideOnMobile"><a href="#">CAREERS</a></li>
+
+          <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+
+          <li class="menu-button" onclick="showSidebar()">
+            <img
+              src="/image/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+      <div class="cover">
+        <h1>curricula</h1>
+      </div>
+    </header>
+
+    <!-- footer -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Address</h4>
+            <ul>
+              <li><a href="#">AIA Boeng Snor</a></li>
+              <li><a href="#">AIA Toul Kork</a></li>
+              <li><a href="#">AIA Chamkar Doung</a></li>
+            </ul>
+            <div class="footer-btn">
+              <button class="maps-btn">Maps and direction</button>
+            </div>
+            <ul>
+              <li><a href="#">info@aiacambodia.edu.kh</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Admission</h4>
+            <ul>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Procedure</a></li>
+              <li><a href="#">Tuition and Fees</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>LATEST NEWS AND EVENTS</h4>
+            <ul>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Activities</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-logo-section">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="/image/3.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-logo-content">
+              <h3>ALBERT INTERNATIONAL ACADEMY</h3>
+              <p>"Committed to excellence"</p>
+            </div>
+            <div class="social-link">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-partner-logos">
+            <img src="/image/Moey.svg" alt="Partner 1 Logo" />
+            <img src="/image/gov-logo-white 1.png" alt="Partner 2 Logo" />
+            <img src="/image/scsa_long 1.png" alt="Partner 2 Logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/header.js"></script>
+  </body>
+</html>
