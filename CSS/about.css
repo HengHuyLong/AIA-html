@@ -20,4 +20,302 @@
     text-align: center;
     padding: 15px 30px;
   }
+  /* About Us Section */
+.about-us {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.about-us-container {
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+
+.about-image img {
+  width: 480px;
+  height: auto;
+  padding-top: 20px;
+  max-width: 500px; /* Adjust the image size as needed */
+}
+
+.about-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-text h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.about-columns {
+  background-color: #183358;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.column h1 {
+  color: #ffffff;
+  display: none;
+}
+
+.section h2 {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #D6BE88;
+}
+
+.section p {
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size:0.8rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* core value  */
+.core-values {
+  background-color: #183358; /* Navy blue */
+  color: #ffffff; /* Gold */
+  text-align: center;
+  padding: 20px;
+
+}
+
+.core-values h2 {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.values-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.value-item {
+  flex: 1;
+  padding: 1rem;
+  border-right: 1px solid #fff; /* Separator lines */
+}
+
+.value-item:last-child {
+  border-right: none; /* Remove border on the last item */
+}
+
+.value-item h3 {
+  color: #D6BE88;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+.value-item h4 {
+  color: #f4f4f4;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #f4f4f4;
+}
+
+/* call to action section  */
+.cta-section {
+  background-color: #183358;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: #D6BE88 -20px 20px;
+  color: white;
+}
+.cta-container {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  padding: 30px;
+  position: relative;
+}
+.cta-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cta-content .highlight {
+  color: #D6BE88;
+}
+.cta-logos {
+  display: flex;
+  gap: 4em;
+  justify-content: flex-start;
+}
+.cta-logos img {
+    max-width: 100%;
+    height: auto;
+    margin-block: auto;
+}
+.cta-logos img:first-child {
+  margin-right: 0;
+}
+
+/* Image Gallery */
+.image-gallery {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 3em;
+}
+.image-gallery h1 {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
   
+}
+
+.photo-container {
+  position: relative;
+  overflow: hidden;
+}
+.photo-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+.caption {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+.thumbnail:hover .photo-container img {
+  transform: scale(1.05);
+}
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+.thumbnail:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+/* Container for filter buttons */
+.filter-buttons {
+  text-align: left;
+  margin-bottom: 20px; /* Space below the buttons */
+}
+
+/* Style for each individual filter button */
+.filter-btn {
+  background-color: transparent ; /* Blue background */
+  color: #183358; /* White text */
+  border: 2px solid #183358; /* Remove the default border */
+  padding: 10px 20px; /* Padding inside the button */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Font size for text */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and hover effect */
+}
+
+/* Hover effect */
+.filter-btn:hover {
+  background-color: #D6BE88; /* Darker blue when hovered */
+  transform: translateY(-2px); /* Lift the button slightly */
+}
+
+/* Active button state */
+.filter-btn.active {
+  background-color: #183358; /* Darker blue for active state */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for active button */
+}
+/* Responsive Design */
+@media (max-width: 1025px) {
+  /* about us */
+  .about-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column h1 {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .about-image img {
+   display: none;
+  }
+
+  .about-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    flex: 1;
+  }
+}
+@media (max-width: 800px) {
+  .values-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .value-item {
+    border-right: none; /* Remove borders between stacked items */
+    border-bottom: 1px solid #fff; /* Add bottom border instead */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Optionally, limit the width */
+  }
+
+  .value-item:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
+  /* call to action section  */
+  .cta-logos {
+    gap: 1em;
+  }
+  .cta-logos :first-child  {
+    width: 40%;
+  }
+  .cta-logos :last-child  {
+    width: 60%;
+  }
+}

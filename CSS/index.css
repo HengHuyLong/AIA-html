@@ -21,6 +21,7 @@
   justify-content: left;
   align-items: center;
   margin: 0 auto;
+  
 }
 
 .logo_container img{
@@ -103,6 +104,7 @@
 }
 .navbar.scrolled .logo_container_mobile img {
   display: block;
+  margin-left: 80%;
 }
 .navbar .sidebar {
   position: fixed;
@@ -112,6 +114,7 @@
   width: 500px;
   z-index: 999;
   background-color: #183358;
+  box-shadow: 2px 2px 5px black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -142,12 +145,12 @@
   margin-top: 10px;
  
 }
-.logo_container_mobile img{
-  max-height: 100px;
+.logo_container_mobile img {
+  max-height: 100px; 
   width: auto;
   display: none;
-  margin-left: 40px;
   transform: scale(2); /* Scale the image (increase size by 20%) */
+  float: left;
 }
 
 .dropdown_menu {
@@ -227,6 +230,7 @@
 /* welcome */
 .welcome-section {
   width: 80%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -253,150 +257,169 @@
   color: #555;
   line-height: 1.6;
   margin: 5px 0 0;
+  text-align: justify;
 }
 
 /* CHOOSE SECTION */
 
-.choose-section-background {
-background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/campus 3.jpg");
-padding: 80px;
-background-position: center;
-background-size: cover;
-position: relative; 
+.why-choose-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 20px;
+  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/campus 3.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.choose-content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+.image-container {
+  flex: 1;
 }
 
-.choose-section {
-display: flex;
-justify-content: center;
-color: white;
-width: 80%;
-margin: auto;
+.image-container img {
+  width: 100%;
+  height: auto;
+  box-shadow: #D6BE88 -10px 10px;
 }
 
-
-.image-container img{
-width: 416px;
-height: 416px;
-margin-right: 20px;
-box-shadow: #D6BE88 -10px 10px;
-
+.text-container {
+  flex: 2;
 }
 
-.choose-section h2 {
-font-size: 32px;
-margin-top: 10px;
-font-family: 'Bebas Neue', sans-serif;
-font-weight: lighter;
+.text-container h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.choose-section h3 {
-font-size: 20px;
-line-height: 2;
-margin: 0;
-font-family: 'Bebas Neue', sans-serif;
-font-weight: lighter;
+.highlight {
+  margin-bottom: 1.5rem;
 }
 
-.choose-section p {
-font-size: 20px;
+.highlight h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight p {
+  font-size: 1rem;
   line-height: 1.6;
-  margin: 5px 0 0;
 }
 
-.readMoreBtn {
-background-color: #FFC72C; /* Yellow background */
-font-size: 32px; /* Font size for text */
-text-align: center; /* Center text */
-padding: 5px 12px; /* Padding around the text */
-border: none; /* Remove border */
-cursor: pointer; /* Pointer cursor on hover */
-display: inline-block; /* Inline-block display */
+
+.read-more-btn {
+background-color: #FFC72C; 
+font-size: 32px; 
+text-align: center; 
+padding: 5px 12px; 
+border: none; 
+cursor: pointer; 
 font-family: 'Bebas Neue', sans-serif;
-text-transform: uppercase; /* Uppercase text */
-margin-top: 20px;
+text-transform: uppercase; 
+float: right;
+color: #183358;
+margin-right: 20px;
 }
-.readMoreBtn a {
+.read-more-btn a {
+text-decoration: none;
 color: #183358;
 }
 
 
-.readMoreBtn:hover {
-background-color: #ffffff; /* Darker shade of yellow or any other color */
-}
-.readMoreBtn:hover a {
-color: rgb(255, 199, 44);
+.read-more-btn:hover {
+background-color: #ffffff; 
 }
 
-/* OUR CAMPUS */
+/* campus */
 .campus {
-background: #183358;
-margin: auto;
-font-family: 'Bebas Neue', sans-serif;
-color: white;
-text-align: center;
-padding: 20px;
+  background: #183358;
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
 }
 .campus h1 {
-font-size: 32px;
-font-weight: 400;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-
-
 .campus-row {
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  display: flex; /* Add this */
-  justify-content: space-between; /* Optional: Adds space between each column */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .campus-col {
-  flex-basis: 32%;
-  width: 345px; /* Adjust width as needed */
-  height: 508px; /* Adjust height as needed */
   position: relative;
+  width: 345px;
+  height: 508px;
   overflow: hidden;
-  margin-bottom: 30px;
 }
-.campus-col img{
-  width: 100%;
-  height: 100%;
+.overlay-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #183358;
+  font-size: 32px;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.campus-col img {
+  width: 345px;
+  height: 508px;
   object-fit: cover;
+  display: block;
 }
 
 .layer {
-  background: transparent;
-  height: 100%;
-  width: 100%;
   position: absolute;
-  top: 0;
+  bottom: -100%; /* Start completely out of view */
   left: 0;
-  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: hwb(46 17% 3% / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.2s ease-in-out; /* Smooth transition */
 }
 
-.layer:hover {
-  background: #ffc72cb3;
+.campus-col:hover .layer {
+  bottom: 0; /* Bring the layer up */
 }
 
 .layer h3 {
-  width: 100%;
+  color: #183358;
+  font-size: 24px;
   font-weight: 400;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+  margin: 0;
+  transition: opacity 0.6s ease-in-out;
   opacity: 0;
-  transition: 0.5;
 }
-.layer:hover h3 {
-  bottom: 49%;
+.campus-col:hover .layer h3 {
   opacity: 1;
 }
 
 /* partner */
 .partner-section {
   background-color: #183358; /* Light gray background */
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px 20px; /* Section spacing */
   text-align: center; /* Center align the text and logos */
   font-family: 'Bebas Neue', sans-serif;
@@ -433,6 +456,7 @@ font-weight: 400;
   text-align: center;
   padding: 20px 20px;
   background-color: #ffffff;
+  color: #183358;
 }
 
 .contact-us h2 {
@@ -440,6 +464,7 @@ font-weight: 400;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
+  
 }
 
 .qr-container {
@@ -471,6 +496,7 @@ font-weight: 400;
 }
 
 .social p {
+  color: #555;
   font-size: 14px;
   margin: 0;
 }
@@ -504,9 +530,11 @@ font-weight: 400;
   width: 100%;
 }
 .map iframe {
+  
   box-shadow: #D6BE88 -10px 10px;
 }
 .map-right iframe {
+
   box-shadow: #D6BE88 10px 10px;
 }
 .map-info h2{
@@ -632,17 +660,22 @@ font-weight: 400;
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+.footer ol, ul {
+  padding: 0%;
+}
 .footer-col ul li a {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   color: white;
   text-decoration: none;
+  cursor:pointer;
   font-weight: lighter;
   display: block;
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: white;
+  color: #F7BD16;
   text-decoration: underline;
 }
 .footer-col-logo-section .social-link a{
@@ -716,6 +749,7 @@ font-weight: 400;
     display: block;
   }
   .logo_container_mobile img{
+    margin-left: 30px;
     display: block;
   }
 
@@ -724,20 +758,33 @@ font-weight: 400;
     flex-direction: column;
   }
   /* choose-section */
-  .choose-section {
+  .image-container img {
+    display: none;
+  }
+  .choose-content-container {
+    flex-direction: column; /* Side-by-side layout for medium and larger screens */
+    align-items: flex-start;
+  }
+
+  .text-container h2 {
+    text-align: left; /* Align text to the left for larger screens */
+  }
+  .read-more-btn {
+    margin-top: 200px;
+    float: none;
+  }
+
+  /* campus */
+  .campus-row {
     display: block;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    }
-  .choose-section img {
-  box-shadow: none;
-  align-items: center;
-  margin-left: 10px;
-    }
-  .choose-section p {
-  margin-bottom: 20px;
-    }
+  }
+  .campus-col {
+    justify-content: center;
+    margin: auto;
+    margin-top: 5px;
+    scale: 0.9;
+  }
+ 
   /* partner section */
 
   /* qr section  */
@@ -752,9 +799,13 @@ font-weight: 400;
   
   .maps {
     text-align: center;
-    width: 100%; /* Make maps take full width on small screens */
   }
- 
+  .map iframe {
+    width: 80%;
+  }
+  .map-right iframe {
+    width: 80%;
+  }
   .map-info-right {
     order: +1;
     text-align: center; /* Center-align text on small screens */
