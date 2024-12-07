@@ -20,4 +20,155 @@
     text-align: center;
     padding: 15px 30px;
   }
+
+  /* General Section Styling */
+.wace-section {
+  background-color: #183358; /* Dark Blue Background */
+  color: #fff; /* White Text */
+  padding: 40px 20px;
+  display: flex;
+}
+
+/* Content Container */
+.wace-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Logo and Title */
+.wace-header {
+  margin-bottom: 20px;
+}
+
+.wace-logo {
+  width: 100%;
+  max-width: 350px; /* Adjust logo size */
+  margin-bottom: 20px;
+}
+
+/* Content Styling */
+.wace-content h3 {
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.wace-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Button Styling */
+.wace-button .btn {
+  background-color: transparent; /* Yellow Button */
+  color: #FFC72C; /* Dark Blue Text */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #FFC72C;
+  transition: all 0.1s ease-in-out;
+  float: right;
+}
+
+.wace-button .btn:hover {
+  background-color: #fff;
+  color: #183358;
+  border: 1px solid #fff;
+}
+/* education section */
+.education-section {
+  background-color: #183358; /* Dark Blue Background */
+  color: #fff; /* White Text */
+  padding: 50px 20px;
+}
+
+.education-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.highlight-title {
+  color: #D6BE88; /* Gold Highlight */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+/* Content Blocks */
+.education-content .content-block {
+  margin-bottom: 20px;
+}
+
+.education-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.education-content p {
+  font-family: Arial, sans-serif;
+
+}
+
+.highlight-subtitle {
+  color: #D6BE88; /* Gold Subtitles */
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+/* Benefits Section */
+.education-benefits h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.education-benefits p {
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) { 
+/* General Section */
+.wace-button .btn {
+  float: none;
+}
+}
+
   
