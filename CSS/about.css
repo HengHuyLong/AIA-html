@@ -268,6 +268,7 @@
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for active button */
 }
+
 /* Responsive Design */
 @media (max-width: 1025px) {
   /* about us */
@@ -292,6 +293,7 @@
     flex: 1;
   }
 }
+
 @media (max-width: 800px) {
   .values-container {
     flex-direction: column; /* Stack items vertically */
@@ -317,5 +319,10 @@
   }
   .cta-logos :last-child  {
     width: 60%;
+  }
+  /* photo galary section  */
+  .filter-btn {
+  margin-top: 10px;
+
   }
 }

@@ -20,4 +20,178 @@
     text-align: center;
     padding: 15px 30px;
   }
+
+  /* admission welcome */
+  .more-info-section p {
+    color: #FFC72C;
+  }
+  /* call to action section  */
+.cta-section {
+  background-color: #183358;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: #D6BE88 -20px 20px;
+  color: white;
+}
+.cta-container {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  padding: 30px;
+  position: relative;
+}
+.cta-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cta-content .highlight {
+  color: #D6BE88;
+}
+.cta-btn-container {
+  margin-top: 20px ;
+}
+.cta-btn {
+  background-color: transparent; /* Yellow background */
+  color: #FFC72C; /* White text color */
+  padding: 10px 30px; /* Padding inside the button */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  border: 1px solid #FFC72C; /* Border around the text */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-block; /* Inline-block display */
+  font-family: 'Bebas Neue', sans-serif;
+  margin-right: 10px;
+}
+.cta-btn:hover {
+  background-color: #ffffff; /* Darker yellow on hover */
+  color: #183358; /* White text on hover */
+  border: 1px solid #fff; 
+}
+
+/* Admission Process Section */
+.admission-process {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 100vh; /* Full height section */
+  overflow: hidden;
+  padding-bottom: 20px;
+  flex-wrap: wrap; /* Allow content to wrap into multiple lines when necessary */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Image Section */
+.image-section {
+  flex: 1; /* Takes up 50% of the width */
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Content Section */
+.content-section {
+  flex: 1; /* Takes up 50% of the width */
+  padding: 40px;
+  background-color: #183358;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Heading styles */
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #D6BE88;
+  padding-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.content-section h3 {
+  font-size: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.content-section h3 strong {
+  font-size: 1rem;
+  padding-bottom: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  color: #D6BE88;
+}
+
+.content-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) { 
+  .cta-btn {
+    margin-top: 10px;
+  }
+
+  .admission-process {
+    flex-direction: column; /* Stack the image and content vertically */
+    height: auto; /* Allow height to adjust on smaller screens */
+    padding-bottom: 40px; /* Additional space for mobile layout */
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-section h3, .content-section h3 strong {
+    font-size: 0.9rem;
+  }
+
+  .content-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .admission-process {
+    flex-direction: column; /* Stack the image and content vertically */
+    height: auto; /* Allow height to adjust on smaller screens */
+  }
+
+  .content-section {
+    padding: 15px;
+  }
+
+  .content-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-section h3, .content-section h3 strong {
+    font-size: 0.8rem;
+  }
+
+  .content-section p {
+    font-size: 0.8rem;
+  }
+ 
+  
+}
   
