@@ -121,7 +121,6 @@
 .education-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
 }
@@ -141,7 +140,6 @@
 .education-benefits h3 {
   font-size: 1.5rem;
   margin-top: 30px;
-  text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
 }
@@ -164,11 +162,199 @@
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
+/* wace section */
+/* WACE Section */
+.requirement-section {
+  background-color: #183358; /* Dark Blue Background */
+  color: #fff; /* White Text */
+  padding: 50px 20px;
+}
+
+.requirement-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Title Styling */
+.requirement-title {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.highlight-title {
+  color: #D6BE88; /* Gold Highlight */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+/* Certificate Section */
+.certificates {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.certificate-item {
+  text-align: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center image horizontally */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth zoom and dim transition */
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1); /* Image zoom effect */
+  filter: brightness(50%); /* Slight dim effect */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  transform: translate(-50%, -50%);
+  color: #FFC72C;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .hover-text {
+  opacity: 1; /* Show text on hover */
+}
+
+.certificate-item p {
+  margin-top: 10px;
+  font-size: 32px;
+  color: #D6BE88; /* Gold Text */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+/* Explanation Section */
+.requirement-details h3 {
+  color: #D6BE88;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.requirement-block {
+  margin-bottom: 20px;
+}
+
+.highlight-subtitle {
+  color: #D6BE88;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.requirement-block p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Explanation Section */
+.requirement-details h3 {
+  color: #D6BE88; /* Gold Subtitles */
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.requirement-block {
+  margin-bottom: 20px;
+}
+
+.highlight-subtitle {
+  color: #D6BE88; /* Gold Subtitles */
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.requirement-block p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Scholarships Section */
+.scholarships-section {
+  background-color: #fff; /* White Background */
+  padding: 40px 20px; /* Vertical and horizontal padding */
+  text-align: center; /* Center-align all content */
+  color: #333; /* Dark text for readability */
+  font-family: Arial, sans-serif; /* Clean, modern font */
+}
+
+.scholarships-container {
+  width: 80%;
+  max-width: 1200px; /* Limit max width */
+  margin: 0 auto; /* Center the container */
+  line-height: 1.6; /* Better line spacing */
+}
+
+.scholarships-title {
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #000; /* Black title */
+}
+
+.title-underline {
+  width: 40%;
+  height: 3px;
+  background-color: #D6BE88; /* Gold color underline */
+  margin: 10px auto 20px; /* Center and add spacing */
+}
+
+.scholarships-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: Arial, sans-serif; /* Clean, modern font */
+  color: #333; /* Dark gray text */
+}
 @media (max-width: 800px) { 
 /* General Section */
 .wace-button .btn {
   float: none;
 }
+
+/* wace section */
+.certificate-item {
+  flex: 1 1 100%; /* Full width for each certificate */
+  max-width: 100%; /* Ensure it occupies entire row */
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
+}
+
 }
 
   
