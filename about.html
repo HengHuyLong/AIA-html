@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
@@ -13,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/CSS/index.css" />
     <link rel="stylesheet" href="/CSS/about.css" />
 
@@ -20,7 +23,6 @@
   </head>
   <body>
     <!-- header -->
-    <header id="custom-header">
       <div class="hideOnMobile">
         <div class="header">
           <div class="inner_header">
@@ -29,13 +31,22 @@
                 <img src="image/3B.png" alt="AIA" />
               </a>
             </div>
-            <button
-            class="bookNowBtn"
-            role="button"
-            onclick="window.location.href='contact.html#form';"
-          >
-            BOOK A TOUR
+            <div class="header-icon-container">
+            <a href="contact.html#map">
+           <i class="header-icon"><img src="/image/location_on_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></i>
+          </a>
+          <a href="https://t.me/albertinternationalacademy"  target="_blank"
+          rel="noopener noreferrer">
+           <i class="header-icon"><img src="/image/call_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></i>
+          </a>
+           <button
+           class="bookNowBtn"
+           role="button"
+           onclick="window.location.href='contact.html#form';"
+           >
+           BOOK A TOUR
           </button>
+            </div>
           </div>
         </div>
       </div>
@@ -294,230 +305,308 @@
         </div>
       </div>
     </section>
- <!-- Image Gallery -->
-<section id="image-gallery" class="image-gallery">
-  <div class="gallery-container">
-    <h1>Facility View</h1>
+    <!-- Image Gallery -->
+    <section id="image-gallery" class="image-gallery">
+      <div class="gallery-container">
+        <h1>Facility View</h1>
 
-    <!-- Filters (Campus Names) -->
-    <div class="filter-buttons">
-      <button class="filter-btn" data-campus="campus1">AIA BOENG SNOR</button>
-      <button class="filter-btn" data-campus="campus2">AIA TOUL KORK</button>
-      <button class="filter-btn" data-campus="campus3">AIA CHAMKAR DOUNG</button>
-    </div>
+        <!-- Filters (Campus Names) -->
+        <div class="filter-buttons">
+          <button class="filter-btn" data-campus="campus1">
+            AIA BOENG SNOR
+          </button>
+          <button class="filter-btn" data-campus="campus2">
+            AIA TOUL KORK
+          </button>
+          <button class="filter-btn" data-campus="campus3">
+            AIA CHAMKAR DOUNG
+          </button>
+        </div>
 
-    <div class="row">
-      <!-- Campus 1 Images (6 photos) -->
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/playground.png" alt="Campus 1 Image 1" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Playground</p>
+        <div class="row">
+          <!-- Campus 1 Images (6 photos) -->
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/playground.png"
+                  alt="Campus 1 Image 1"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Playground</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/canteen.png"
+                  alt="Campus 1 Image 2"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Canteen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="./image/classroom.png"
+                  alt="Campus 1 Image 3"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">classroom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/library.png"
+                  alt="Campus 1 Image 4"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">library</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 1 Image 5"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Basketball Court</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus1">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 1 Image 6"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">swimming pool</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campus 2 Images (6 photos) -->
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/campus tk.png"
+                  alt="Campus 2 Image 1"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Playground</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/campus tk.png"
+                  alt="Campus 2 Image 2"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Canteen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/classroom.png"
+                  alt="Campus 2 Image 3"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Classroom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/library.png"
+                  alt="Campus 2 Image 4"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Library</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 2 Image 5"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Basketball Court</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus2">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 2 Image 6"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Swimming Pool</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campus 3 Images (6 photos) -->
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/aia cd.png"
+                  alt="Campus 3 Image 1"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">PLayground</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/aia cd.png"
+                  alt="Campus 3 Image 2"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Canteen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/classroom.png"
+                  alt="Campus 3 Image 3"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">classroom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/library.png"
+                  alt="Campus 3 Image 4"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">library</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 3 Image 5"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Basketball court</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 campus3">
+            <div class="thumbnail">
+              <div class="photo-container">
+                <img
+                  src="/image/court.png"
+                  alt="Campus 3 Image 6"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <p class="caption">Swimming pool</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/canteen.png" alt="Campus 1 Image 2" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Canteen</p>
-            </div>
-          </div>
-        </div>
+    </section>
+    <!-- more info -->
+    <section class="more-info-section">
+      <h2>Need more information?</h2>
+      <div class="info-btn">
+        <a href="contact.html" class="contact-us-btn">CONTACT US</a>
+        <a href="contact.html#map" class="contact-us-btn">Visit Our Campus</a>
       </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="./image/classroom.png" alt="Campus 1 Image 3" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">classroom</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/library.png" alt="Campus 1 Image 4" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">library</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/court.png" alt="Campus 1 Image 5" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Basketball Court</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus1">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/court.png" alt="Campus 1 Image 6" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">swimming pool</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Campus 2 Images (6 photos) -->
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-1.jpg" alt="Campus 2 Image 1" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 1</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-2.jpg" alt="Campus 2 Image 2" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 2</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-3.jpg" alt="Campus 2 Image 3" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-4.jpg" alt="Campus 2 Image 4" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 4</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-5.jpg" alt="Campus 2 Image 5" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 5</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus2">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus2-6.jpg" alt="Campus 2 Image 6" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 2 Image 6</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Campus 3 Images (6 photos) -->
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-1.jpg" alt="Campus 3 Image 1" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 1</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-2.jpg" alt="Campus 3 Image 2" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 2</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-3.jpg" alt="Campus 3 Image 3" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-4.jpg" alt="Campus 3 Image 4" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 4</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-5.jpg" alt="Campus 3 Image 5" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 5</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-sm-6 mb-4 campus3">
-        <div class="thumbnail">
-          <div class="photo-container">
-            <img src="/image/campus3-6.jpg" alt="Campus 3 Image 6" class="img-fluid">
-            <div class="overlay">
-              <p class="caption">Campus 3 Image 6</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- more info -->
-<section class="more-info-section">
-  <h2>Need more information?</h2>
-  <div class="info-btn">
-    <a href="contact.html" class="contact-us-btn">CONTACT US</a>
-    <a href="contact.html#map" class="contact-us-btn">Visit Our Campus</a>
-  </div>
-</section>
+    </section>
 
     <!-- footer -->
     <footer class="footer">
@@ -586,17 +675,33 @@
               <p>"Committed to excellence"</p>
             </div>
             <div class="social-link">
-              <a href="https://www.facebook.com/albertinternationalacademy"  target="_blank"
-              rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.facebook.com/albertinternationalacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
 
-              <a href="https://www.tiktok.com/@aiaphnompenh?is_from_webapp=1&sender_device=pc" target="_blank"
-              rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+              <a
+                href="https://www.tiktok.com/@aiaphnompenh?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-tiktok"></i
+              ></a>
 
-              <a href="https://t.me/albertinternationalacademy" target="_blank"
-              rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+              <a
+                href="https://t.me/albertinternationalacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-telegram"></i
+              ></a>
 
-              <a href="https://www.youtube.com/@AIAPhnomPenh" target="_blank"
-              rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+              <a
+                href="https://www.youtube.com/@AIAPhnomPenh"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
           </div>
           <div class="footer-partner-logos">
@@ -609,44 +714,44 @@
     </footer>
     <script>
       // Get all filter buttons
-      const filterButtons = document.querySelectorAll('.filter-btn');
-      
+      const filterButtons = document.querySelectorAll(".filter-btn");
+
       // Get all the image rows that are categorized by campus
-      const allImages = document.querySelectorAll('.row .col-lg-4');
-    
+      const allImages = document.querySelectorAll(".row .col-lg-4");
+
       // Function to hide all images
       function hideAllImages() {
-        allImages.forEach(image => {
-          image.style.display = 'none';
+        allImages.forEach((image) => {
+          image.style.display = "none";
         });
       }
-    
+
       // Function to show images for a specific campus
       function showCampusImages(campus) {
         hideAllImages(); // Hide all images first
         const campusImages = document.querySelectorAll(`.${campus}`);
-        campusImages.forEach(image => {
-          image.style.display = 'block'; // Show only images of the selected campus
+        campusImages.forEach((image) => {
+          image.style.display = "block"; // Show only images of the selected campus
         });
       }
-    
+
       // Add click event to each filter button
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
           // Remove 'active' class from all buttons
-          filterButtons.forEach(btn => btn.classList.remove('active'));
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
           // Add 'active' class to the clicked button
-          this.classList.add('active');
-          
-          const campus = this.getAttribute('data-campus');
+          this.classList.add("active");
+
+          const campus = this.getAttribute("data-campus");
           showCampusImages(campus);
         });
       });
-    
+
       // Initially, show the images for the first campus (campus1) by default
-      showCampusImages('campus1');
+      showCampusImages("campus1");
       // Set the first button as active by default
-      filterButtons[0].classList.add('active');
+      filterButtons[0].classList.add("active");
     </script>
     <script src="js/header.js"></script>
   </body>
