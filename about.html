@@ -29,7 +29,13 @@
                 <img src="image/3B.png" alt="AIA" />
               </a>
             </div>
-            <button class="bookNowBtn" role="button">BOOK A TOUR</button>
+            <button
+            class="bookNowBtn"
+            role="button"
+            onclick="window.location.href='contact.html#form';"
+          >
+            BOOK A TOUR
+          </button>
           </div>
         </div>
       </div>
@@ -305,9 +311,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus 3.jpg" alt="Campus 1 Image 1" class="img-fluid">
+            <img src="/image/playground.png" alt="Campus 1 Image 1" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 1</p>
+              <p class="caption">Playground</p>
             </div>
           </div>
         </div>
@@ -316,9 +322,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus 3.jpg" alt="Campus 1 Image 2" class="img-fluid">
+            <img src="/image/canteen.png" alt="Campus 1 Image 2" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 2</p>
+              <p class="caption">Canteen</p>
             </div>
           </div>
         </div>
@@ -327,9 +333,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus 3.jpg" alt="Campus 1 Image 3" class="img-fluid">
+            <img src="./image/classroom.png" alt="Campus 1 Image 3" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 3</p>
+              <p class="caption">classroom</p>
             </div>
           </div>
         </div>
@@ -338,9 +344,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus1-4.jpg" alt="Campus 1 Image 4" class="img-fluid">
+            <img src="/image/library.png" alt="Campus 1 Image 4" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 4</p>
+              <p class="caption">library</p>
             </div>
           </div>
         </div>
@@ -349,9 +355,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus1-5.jpg" alt="Campus 1 Image 5" class="img-fluid">
+            <img src="/image/court.png" alt="Campus 1 Image 5" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 5</p>
+              <p class="caption">Basketball Court</p>
             </div>
           </div>
         </div>
@@ -360,9 +366,9 @@
       <div class="col-lg-4 col-sm-6 mb-4 campus1">
         <div class="thumbnail">
           <div class="photo-container">
-            <img src="/image/campus1-6.jpg" alt="Campus 1 Image 6" class="img-fluid">
+            <img src="/image/court.png" alt="Campus 1 Image 6" class="img-fluid">
             <div class="overlay">
-              <p class="caption">Campus 1 Image 6</p>
+              <p class="caption">swimming pool</p>
             </div>
           </div>
         </div>
@@ -509,7 +515,7 @@
   <h2>Need more information?</h2>
   <div class="info-btn">
     <a href="contact.html" class="contact-us-btn">CONTACT US</a>
-    <a href="contact.html" class="contact-us-btn">Visit Our Campus</a>
+    <a href="contact.html#map" class="contact-us-btn">Visit Our Campus</a>
   </div>
 </section>
 
@@ -520,12 +526,35 @@
           <div class="footer-col">
             <h4>Address</h4>
             <ul>
-              <li><a href="#">AIA Boeng Snor</a></li>
-              <li><a href="#">AIA Toul Kork</a></li>
-              <li><a href="#">AIA Chamkar Doung</a></li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/nsSgCaGrbPqUPn7R9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AIA Boeng Snor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/b4bbFTLbXr6mQi1X8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AIA Toul Kork</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/SoACqFEjAh8QWRiV6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AIA Chamkar Doung</a
+                >
+              </li>
             </ul>
             <div class="footer-btn">
-              <button class="maps-btn">Maps and direction</button>
+              <a href="contact.html#map">
+                <button class="maps-btn">Maps and direction</button>
+              </a>
             </div>
             <ul>
               <li><a href="#">info@aiacambodia.edu.kh</a></li>
@@ -534,9 +563,9 @@
           <div class="footer-col">
             <h4>Admission</h4>
             <ul>
-              <li><a href="/policy.html">Policy</a></li>
-              <li><a href="#">Procedure</a></li>
-              <li><a href="#">Tuition and Fees</a></li>
+              <li><a href="policy.html">Policy</a></li>
+              <li><a href="admission.html#admission-process">Procedure</a></li>
+              <li><a href="admission.html#tuition-fee">Tuition and Fees</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -557,10 +586,17 @@
               <p>"Committed to excellence"</p>
             </div>
             <div class="social-link">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-tiktok"></i></a>
-              <a href="#"><i class="fab fa-telegram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.facebook.com/albertinternationalacademy"  target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+
+              <a href="https://www.tiktok.com/@aiaphnompenh?is_from_webapp=1&sender_device=pc" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+
+              <a href="https://t.me/albertinternationalacademy" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+
+              <a href="https://www.youtube.com/@AIAPhnomPenh" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
           <div class="footer-partner-logos">
