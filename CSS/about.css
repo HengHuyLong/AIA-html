@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh; /* Adjust the height of the cover */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/image/about\ us\ cover.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/image/about\ us\ cover.JPEG");
     background-size: cover; /* Ensure the image covers the full area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
@@ -170,19 +170,13 @@
 .cta-content .highlight {
   color: #D6BE88;
 }
-.cta-logos {
-  display: flex;
-  gap: 4em;
-  justify-content: flex-start;
-}
+
 .cta-logos img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-block: auto;
 }
-.cta-logos img:first-child {
-  margin-right: 0;
-}
+
 
 /* Image Gallery */
 .image-gallery {
@@ -205,7 +199,8 @@
 .photo-container img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 352px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 .overlay {
@@ -312,16 +307,10 @@
   .value-item:last-child {
     border-bottom: none; /* Remove bottom border for the last item */
   }
-  /* call to action section  */
-  .cta-logos {
-    gap: 1em;
-  }
-  .cta-logos :first-child  {
-    width: 40%;
-  }
-  .cta-logos :last-child  {
-    width: 60%;
-  }
+
+  .cta-logos img {
+    max-width: 100%;
+}
   /* photo galary section  */
   .filter-btn {
   margin-top: 10px;

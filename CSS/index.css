@@ -475,9 +475,7 @@ background-color: #ffffff;
 .partner-logos img:hover {
   transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
-.partner-logos img:last-child {
-  height: 80px; /* Make the last logo a bit smaller */
-}
+
 /* contact-us */
 .contact-us {
   text-align: center;
@@ -774,9 +772,7 @@ background-color: #ffffff;
 .footer-partner-logos img:hover {
   transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
-.footer-partner-logos img:last-child {
-  height: 80px; /* Make the last logo a bit smaller */
-}
+
 
 
 @media (max-width: 800px) {
