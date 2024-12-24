@@ -880,12 +880,27 @@ background-color: #ffffff;
   .welcome-section {
     flex-direction: column;
   }
-
+  /* partner  */
+  .partner-logos img:last-child {
+   width: 100%;
+  }
   /* footer */
+  .footer-partner-logos {
+    display: block;
+    flex-wrap: nowrap;
+  }
+ 
+  .footer-partner-logos :first-child {
+    margin-left: 15px;
+  }
+  .footer-partner-logos :last-child {
+    width: 100%;
+  }
   .footer-col {
     width: 100%;
     margin-bottom: 20px;
   }
+
  
   
 }
