@@ -295,7 +295,7 @@ html {
   justify-content: space-between;
   gap: 2rem;
   padding: 20px;
-  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/campus 3.jpg");
+  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("image/campus 3.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -529,7 +529,7 @@ background-color: #ffffff;
 /* map section */
 
 .map-section{
-  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("/image/AIA-logo1.png");
+  background-image: linear-gradient(rgba(24, 51, 88, 0.9), rgba(24, 51, 88, 0.9)), url("../image/AIA-logo1.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
