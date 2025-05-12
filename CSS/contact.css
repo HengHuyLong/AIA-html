@@ -59,6 +59,11 @@
     color: #ffffff;
     font-size: 12px;
   }
+  .contact-col div p:hover {
+  color: #FFC72C;
+  cursor: pointer;
+  text-decoration: underline; 
+}
   .contact-col div h5, .contact-col h5 {
     font-size: 20px;
     margin-bottom:5px ;
